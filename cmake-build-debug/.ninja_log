@@ -1,0 +1,9 @@
+# ninja log v6
+2	418	7489843431415018	CMakeFiles/untitled.dir/main.cpp.obj	c9bb8d8b906c0240
+6	442	7489843431465031	CMakeFiles/untitled.dir/top_manager.cpp.obj	bd4fa207c4a5aa2a
+442	551	7489843435819883	untitled.exe	4e76888f816a35ba
+13	449	7489853545391181	CMakeFiles/untitled.dir/main.cpp.obj	c9bb8d8b906c0240
+17	474	7489853545433470	CMakeFiles/untitled.dir/top_manager.cpp.obj	bd4fa207c4a5aa2a
+474	561	7489853550007013	untitled.exe	4e76888f816a35ba
+13	448	7489854232372732	CMakeFiles/untitled.dir/top_manager.cpp.obj	bd4fa207c4a5aa2a
+448	535	7489854236722426	untitled.exe	4e76888f816a35ba
