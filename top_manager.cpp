@@ -4,9 +4,6 @@
 using namespace std;
 
 
-// Trovare modo per gestire id
-// Aggiorna la posizione (variabile)
-
 void mostraMenu() {
 	cout << "\nMenu:\n";
 	cout << "1. Visualizza la classifica\n";
@@ -106,7 +103,7 @@ void bubbleSort(utente* classifica, int dim) {
 		}
 	}
 	// Aggiorna solo la posizione dei giocatori validi
-	int posizione = 0;
+	int posizione = 1;
 	for (int i = 0; i < dim; i++) {
 		if (classifica[i].nome != "") {
 			classifica[i].posizione = posizione++;
@@ -165,7 +162,7 @@ void aggiungiGiocatore(utente* classifica, int dim) {
 		// Verifica se il giocatore e' già presente nella classifica
 		for (int i = 0; i < dim; i++) {
 			if (classifica[i].nome == giocatore.nome) {
-				cout << "Il giocatore \"" << giocatore.nome << "\" e' già presente nella classifica!" << endl;
+				cout << "Il giocatore " << giocatore.nome << " e' già presente nella classifica!" << endl;
 				cout << "Vuoi sovrascrivere il punteggio? (s/n): ";
 				char scelta;
 				cin >> scelta;
@@ -173,9 +170,9 @@ void aggiungiGiocatore(utente* classifica, int dim) {
 					giocatore.id = classifica[i].id;  // Mantieni lo stesso ID
 					classifica[i] = giocatore;
 					bubbleSort(classifica, dim);
-					cout << "Il punteggio del giocatore \"" << giocatore.nome << "\" e' stato aggiornato!" << endl;
+					cout << "Il punteggio del giocatore " << giocatore.nome << " e' stato aggiornato!" << endl;
 				} else {
-					cout << "Il punteggio del giocatore \"" << giocatore.nome << "\" non e' stato aggiornato." << endl;
+					cout << "Il punteggio del giocatore " << giocatore.nome << " non e' stato aggiornato." << endl;
 				}
 				return;
 			}
@@ -185,9 +182,9 @@ void aggiungiGiocatore(utente* classifica, int dim) {
 		giocatore.id = ottienID(classifica, dim) + 1;
 		classifica[peggiorIndex] = giocatore;
 		bubbleSort(classifica, dim);
-		cout << "Il giocatore \"" << giocatore.nome << "\" e' stato aggiunto con successo!" << endl;
+		cout << "Il giocatore " << giocatore.nome << " e' stato aggiunto con successo!" << endl;
 	} else {
-		cout << "Il punteggio del giocatore \"" << giocatore.nome << "\" non e' sufficiente per entrare in classifica!" << endl;
+		cout << "Il punteggio del giocatore " << giocatore.nome << " non e' sufficiente per entrare in classifica!" << endl;
 		cout << "Punteggio attuale del peggiore: " << classifica[peggiorIndex].punteggio << endl;
 	}
 }

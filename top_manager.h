@@ -39,4 +39,5 @@ void mostraMenu();
 
 // Funzione per leggere un intero con gestione dell'input non valido
 int leggiIntero();
+
 #endif //TOP_MANAGER_H
