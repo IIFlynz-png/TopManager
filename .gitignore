@@ -3,3 +3,4 @@ cmake-build-debug/
 
 # Ignora il file CMakeLists.txt
 CMakeLists.txt
+.idea/editor.xml
