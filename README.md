@@ -1,5 +1,5 @@
 # RELAZIONE SULLE SCELTE PROGETTUALI
-
+Questo è l'implementazione di un esercizio che mi è stato assegnat durante il mio 3° anno di scuola superiore presso l'ITI Marconi di Pontedera.
 ## LA RAPPRESENTAZIONE DEI DATI
 
 La struttura dati principale è `utente`, definita come segue:
